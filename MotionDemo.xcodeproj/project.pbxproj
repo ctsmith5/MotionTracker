@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F458FF1E289C356E002957FB /* LocationService in Frameworks */ = {isa = PBXBuildFile; productRef = F458FF1D289C356E002957FB /* LocationService */; };
+		F458FF22289D65BE002957FB /* VelocityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458FF21289D65BE002957FB /* VelocityView.swift */; };
+		F458FF24289D7C2F002957FB /* VelocityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458FF23289D7C2F002957FB /* VelocityViewModel.swift */; };
 		F485FC71289963E9001DBB31 /* MotionDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC70289963E9001DBB31 /* MotionDemoApp.swift */; };
-		F485FC73289963E9001DBB31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC72289963E9001DBB31 /* ContentView.swift */; };
+		F485FC73289963E9001DBB31 /* MotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC72289963E9001DBB31 /* MotionView.swift */; };
 		F485FC75289963EA001DBB31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F485FC74289963EA001DBB31 /* Assets.xcassets */; };
 		F485FC78289963EA001DBB31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F485FC77289963EA001DBB31 /* Preview Assets.xcassets */; };
 		F485FC82289963EA001DBB31 /* MotionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC81289963EA001DBB31 /* MotionDemoTests.swift */; };
 		F485FC8C289963EA001DBB31 /* MotionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC8B289963EA001DBB31 /* MotionDemoUITests.swift */; };
 		F485FC8E289963EA001DBB31 /* MotionDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC8D289963EA001DBB31 /* MotionDemoUITestsLaunchTests.swift */; };
+		F485FC9C28996856001DBB31 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485FC9B28996856001DBB31 /* MotionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F458FF1B289C342E002957FB /* LocationService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LocationService; path = ../LocationService; sourceTree = "<group>"; };
+		F458FF21289D65BE002957FB /* VelocityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelocityView.swift; sourceTree = "<group>"; };
+		F458FF23289D7C2F002957FB /* VelocityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelocityViewModel.swift; sourceTree = "<group>"; };
 		F485FC6D289963E9001DBB31 /* MotionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F485FC70289963E9001DBB31 /* MotionDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDemoApp.swift; sourceTree = "<group>"; };
-		F485FC72289963E9001DBB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F485FC72289963E9001DBB31 /* MotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionView.swift; sourceTree = "<group>"; };
 		F485FC74289963EA001DBB31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F485FC77289963EA001DBB31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F485FC7D289963EA001DBB31 /* MotionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,7 @@
 		F485FC87289963EA001DBB31 /* MotionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F485FC8B289963EA001DBB31 /* MotionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDemoUITests.swift; sourceTree = "<group>"; };
 		F485FC8D289963EA001DBB31 /* MotionDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F485FC9B28996856001DBB31 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F458FF1E289C356E002957FB /* LocationService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F458FF1A289C342E002957FB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F458FF1B289C342E002957FB /* LocationService */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F458FF1C289C356E002957FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F485FC64289963E9001DBB31 = {
 			isa = PBXGroup;
 			children = (
+				F458FF1A289C342E002957FB /* Packages */,
 				F485FC6F289963E9001DBB31 /* MotionDemo */,
 				F485FC80289963EA001DBB31 /* MotionDemoTests */,
 				F485FC8A289963EA001DBB31 /* MotionDemoUITests */,
 				F485FC6E289963E9001DBB31 /* Products */,
+				F458FF1C289C356E002957FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +120,9 @@
 		F485FC6F289963E9001DBB31 /* MotionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F485FC9D28996878001DBB31 /* View */,
+				F485FC9A28996844001DBB31 /* ViewModel */,
 				F485FC70289963E9001DBB31 /* MotionDemoApp.swift */,
-				F485FC72289963E9001DBB31 /* ContentView.swift */,
 				F485FC74289963EA001DBB31 /* Assets.xcassets */,
 				F485FC76289963EA001DBB31 /* Preview Content */,
 			);
@@ -127,6 +154,24 @@
 			path = MotionDemoUITests;
 			sourceTree = "<group>";
 		};
+		F485FC9A28996844001DBB31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F485FC9B28996856001DBB31 /* MotionViewModel.swift */,
+				F458FF23289D7C2F002957FB /* VelocityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F485FC9D28996878001DBB31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F485FC72289963E9001DBB31 /* MotionView.swift */,
+				F458FF21289D65BE002957FB /* VelocityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +188,9 @@
 			dependencies = (
 			);
 			name = MotionDemo;
+			packageProductDependencies = (
+				F458FF1D289C356E002957FB /* LocationService */,
+			);
 			productName = MotionDemo;
 			productReference = F485FC6D289963E9001DBB31 /* MotionDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -257,8 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F485FC73289963E9001DBB31 /* ContentView.swift in Sources */,
+				F485FC73289963E9001DBB31 /* MotionView.swift in Sources */,
+				F485FC9C28996856001DBB31 /* MotionViewModel.swift in Sources */,
 				F485FC71289963E9001DBB31 /* MotionDemoApp.swift in Sources */,
+				F458FF22289D65BE002957FB /* VelocityView.swift in Sources */,
+				F458FF24289D7C2F002957FB /* VelocityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +471,7 @@
 				DEVELOPMENT_TEAM = 2779EQ3QB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Testing Location Services. Please Enable.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +501,7 @@
 				DEVELOPMENT_TEAM = 2779EQ3QB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Testing Location Services. Please Enable.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +636,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F458FF1D289C356E002957FB /* LocationService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LocationService;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F485FC65289963E9001DBB31 /* Project object */;
 }
